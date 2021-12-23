@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "buildDeploy": "ng build --prod",
-    "deploy": "npx angular-cli-ghpages --dir=../dist/homepage"
+    "buildDeploy": "ng build",
+    "deploy": "npx angular-cli-ghpages --dir=../docs"
   },
   "private": true,
   "dependencies": {
