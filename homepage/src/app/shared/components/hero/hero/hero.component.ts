@@ -17,8 +17,8 @@ export class HeroComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(){
     new Typewritter({
-      text: "Alejandro Chacón, web 3.0 UI developer", // palabras usadas para el typewritter
-      time: 90 // velocidad de escritura
+      text: "Alejandro Chacón, web 3.0 developer",
+      time: 90
     });
   }
 
