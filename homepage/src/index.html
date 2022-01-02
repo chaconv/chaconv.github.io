@@ -12,4 +12,22 @@
     <app-root></app-root>
   </div>
 </body>
+<script>
+  const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.pageYOffset;
+  
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.add("scroll-down");
+  }
+
+  if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down");
+  }
+
+  lastScroll = currentScroll;
+});
+</script>
 </html>

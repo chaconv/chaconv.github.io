@@ -16,8 +16,6 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    // Components
-    NavbarModule,
     HeroModule,
   ],
   exports: [
