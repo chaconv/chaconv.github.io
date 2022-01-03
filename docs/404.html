@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Homepage</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/index.min.js"></script>
+<style>*{padding:0;margin:0;box-sizing:border-box}body{margin:auto;font-family:Gill Sans Extrabold,sans-serif;font-size:16px;font-weight:400;line-height:1.5;color:#fff;background:linear-gradient(to right,purple,#03011f);overflow:overlay}#app-container{overflow:hidden}</style><link rel="stylesheet" href="styles.519e170cbf5559fc.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.519e170cbf5559fc.css"></noscript></head>
+<body>
+  <div id="app-container">
+    <app-root></app-root>
+  </div>
+<script src="runtime.2f3f5ad78cab0846.js" type="module"></script><script src="polyfills.206a85b35614066a.js" type="module"></script><script src="main.b34a44d7b270490e.js" type="module"></script>
+<script>
+  const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.pageYOffset;
+  
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.add("scroll-down");
+  }
+
+  if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down");
+  }
+
+  lastScroll = currentScroll;
+});
+
+
+</script>
+
+</body></html>
